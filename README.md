@@ -25,3 +25,7 @@ Open http://localhost:3000 on the host computer. For phones on the same Wi-Fi ne
 - When deployed, optionally set `PUBLIC_ORIGIN=https://YOUR-SERVICE.onrender.com`
 
 Prototype notes: rooms are stored in server memory and reset upon restart, browser refresh requires rejoining, and host disconnection closes the room. For production, add durable state, reconnect support, rate limiting, and authentication.
+
+## ChatGPT Sites
+
+Run `npm run dev` with Node 24 to preview the Sites edition with a temporary SQLite database. Run `npm run build` to build the Worker. The hosted edition uses the `DB` D1 binding and the schema in `drizzle/`. Clients refresh the roster every 1.5 seconds. Inactive sessions expire after 45 seconds, and the host can close a room immediately.

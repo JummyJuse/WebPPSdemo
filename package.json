@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node sites/preview.mjs",
+    "build": "node sites/build.mjs"
   },
   "dependencies": {
     "express": "^4.21.2",
-    "socket.io": "^4.8.1",
-    "qrcode": "^1.5.4"
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.8.1"
   }
 }
